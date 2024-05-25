@@ -1,0 +1,131 @@
+.DetailsTable {
+    display: block;
+    // padding: 1rem;
+    background: #E9ECEF;
+    width: 100%;
+
+
+    .tabsDiv {
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+        margin-bottom: .3rem;
+        &::-webkit-scrollbar{
+            display: none;
+            opacity: 0;
+        }
+
+
+        button {
+            font-size: .91em;
+            color: $textColor;
+            background: #E9ECEF;
+            margin: 0;
+            padding: .5rem 1rem;
+            min-width: fit-content;
+            border: 0;
+            font-weight: 500;
+            font-family: $font;
+            border-bottom: 3px solid #E9ECEF;
+            transition: .3s ease;
+            height: 48px;
+            // margin-bottom: 0.3rem;
+
+            &:hover {
+                border-bottom: 3px solid $blue;
+                background: $W;
+                color: $blue
+            }
+        }
+    }
+
+    .tableBody {
+        padding: 1rem;
+        background: $W;
+
+        .tIntro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h5 {
+                font-size: .91em;
+                font-weight: 500;
+            }
+
+            .assignBtns {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+
+                button {
+                    @include btn1;
+                    padding: .71rem;
+
+                    &:first-child {
+                        background: $blue;
+                        color: $W;
+                    }
+                }
+
+            }
+        }
+
+        .tableContentRows {
+            @include row;
+            padding: .75rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            justify-content: space-between;
+            width: 100%;
+            margin: .85rem 0;
+
+            .nameTd {
+                display: flex;
+                gap: .75rem;
+
+                .imgDiv {
+                    position: relative;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+
+                .contents {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: .3rem;
+                    min-width: fit-content;
+                    font-family: $font;
+
+                    p {
+                        font-size: .78em;
+                        color: $textColor;
+                    }
+                }
+            }
+
+            .tableTd {
+                margin: 0 1rem;
+                .td {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3rem;
+                    font-size: .78em;
+                }
+                .assigned{
+                    background: $body;
+                    padding: 0.32rem;
+                    font-size: .891em;
+                }
+                button{
+                    @include btn1;
+                    font-size: .891em;
+                }
+
+            }
+        }
+
+    }
+}

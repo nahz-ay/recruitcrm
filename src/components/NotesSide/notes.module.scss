@@ -1,0 +1,97 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    background: $W;
+
+    .iconsDiv {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        margin: 0 2rem;
+        background: $W;
+
+
+        span {
+            text-align: center;
+            padding: .5rem .65rem;
+            border-radius: 50%;
+            background: #f4f9fa;
+            color: $blue;
+            font-size: 1.25em;
+        }
+    }
+    .allnotes{
+        display: flex;
+        gap: 1.9rem;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        // margin: 1rem;
+        background: #cccccc54;
+        span{
+            font-size: .91em;
+            font-weight: 500;
+            color:$textColor;
+            min-width: fit-content;
+        }
+        .active{
+            color: $blue;
+        }
+    }
+    .notesDiv{
+        background: #e3e0e031;
+       
+        .notesOne{
+            background: $W;
+            padding: .21rem .1rem;
+            margin: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            .head{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                font-size: .91em;
+                p{
+                    color: $blue;
+                    padding: .3rem .5rem;
+                    font-weight: 500;
+                    i{
+                        background: #f4f9fa;
+                        margin: 0 .5rem;
+                        padding: .25rem;
+                        border-radius: 9px;
+                    }
+
+                }
+                span{
+                    color: $textColor;
+                    padding: .3rem;
+                    width: 50px;
+                    text-align: center;
+                    height: 20px;
+                    font-size: .8em;
+                    font-weight: 500;
+                    border-radius: 6px;
+                    background: #95b9c53e;
+                }
+            }
+            .para{
+                margin: 1rem;
+                font-size: .8em;
+                line-height: 22px;
+                color: $textColor;
+            }
+            h5{
+                color: $blue;
+                margin: 1rem;
+            }
+            .profFooter{
+                font-size: .8em !important;
+                display: flex;
+                font-weight: 500;
+                justify-content: space-between;
+                margin: 1rem;
+            }
+        }
+    }
+}

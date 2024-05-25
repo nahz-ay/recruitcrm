@@ -1,0 +1,215 @@
+.profileTab {
+    @include row;
+    justify-content: space-between;
+    padding: .7rem .852rem;
+    font-family: $font;
+    background: $body;
+    width: 100%;
+
+    .breadCrumb {
+        display: flex;
+        align-items: center;
+
+        p {
+            color: $blue;
+            font-weight: 500;
+            font-size: .82em;
+            color: $textColor;
+
+            &:first-child {
+                color: $blue;
+            }
+
+        }
+
+        .id {
+            margin: 0 .51rem;
+            font-size: 0.81em;
+            font-weight: 400;
+        }
+
+        span {
+            font-size: 1.5em;
+            color: $blue;
+            margin-top: 4px;
+
+        }
+    }
+
+    .profBtnsGrp {
+        display: flex;
+        gap: .5rem;
+
+        button {
+            @include btn1;
+        }
+    }
+
+}
+
+.cardTableProf {
+    @include row;
+    justify-content: start;
+    padding: .75rem 1rem;
+    background: $W;
+    width: 100%;
+
+
+    .logoContent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .imgDiv {
+            position: relative;
+        }
+
+        .contentsUser {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .firstline {
+                display: flex;
+            }
+
+            margin: 0 .53rem;
+
+            h2 {
+                font-size: 1.12em;
+                font-weight: 500;
+            }
+
+            .socialIcons {
+                display: flex;
+                gap: .25rem;
+                margin: 0 .71rem;
+                font-size: 1.12em;
+            }
+        }
+
+        .profileDesigntn {
+            display: flex;
+            text-align: start;
+            margin: .5rem 0;
+            color: $textColor;
+            gap: 1rem;
+
+            p {
+                font-weight: 400;
+                font-size: .87em;
+                font-family: $font;
+            }
+        }
+    }
+
+    .talebtnDivs {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: .51em;
+
+
+        button {
+            @include btn1;
+            display: block;
+            font-size: 1.12em;
+        }
+
+        .contactBtn {
+            border: 1px solid #E03131;
+            color: #E03131;
+            background: #e031311f;
+            min-width: 115px;
+            font-size: .9em !important;
+            font-weight: 500;
+        }
+    }
+
+}
+
+.tabelHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1rem;
+    background: $W;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: $font;
+
+    .emailDiv {
+
+        display: flex;
+        gap: 2rem;
+
+        .one {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            font-size: 1.2em;
+            color: $textColor;
+
+            p {
+                color: $blue;
+                font-weight: 500;
+                font-size: 0.7em;
+            }
+        }
+
+    }
+
+    .tableUserName {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+
+        .one {
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+            font-family: $font;
+            font-size: 1.2em;
+            color: $textColor;
+
+            p {
+                font-weight: 500;
+                font-size: 0.7em;
+            }
+        }
+    }
+}
+
+.tableDiv {
+    width: 100%;
+    background: $W;
+    padding: 1rem;
+    display: flex;
+
+    .columnOne {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        font-size: .8em;
+        color: $textColor;
+
+        .rowOne {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: .6rem;
+            text-align: start;
+
+            h4,
+            h5 {
+                text-align: start;
+                font-size: 1.091em !important;
+                width: 50%;
+            }
+
+            h5 {
+                font-weight: 500 !important;
+            }
+
+        }
+    }
+}
