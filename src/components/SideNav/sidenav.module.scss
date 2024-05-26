@@ -38,6 +38,40 @@
     }
 
     ul {
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &::-webkit-scrollbar {
+            display: none;
+            // width: 5px;
+            background-color: $bgBlue;
+            height: 10px;
+            // opacity: 0;
+        }
+
+       
+
+        // /* Scrollbar track */
+        // &::-webkit-scrollbar-track {
+        //     background: #f1f1f1;
+        //     /* Background of the track */
+        // }
+
+        // /* Scrollbar handle */
+        // &::-webkit-scrollbar-thumb {
+        //     background-color: $bgBlue;
+        //     /* Background color of the scrollbar handle */
+        //     border-radius: 10px;
+        //     /* Round edges of the scrollbar handle */
+        // }
+
+        // /* Scrollbar handle on hover */
+        // &::-webkit-scrollbar-thumb:hover {
+        //     background-color: #ffffff4f;
+        //     /* Darker shade when hovered */
+        // }
+
+
         li {
             color: $W !important;
             // @extend .menus;
