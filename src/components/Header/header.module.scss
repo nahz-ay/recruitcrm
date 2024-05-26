@@ -1,11 +1,12 @@
 .mainDivHeader {
 
-    width: 100%;
+    width: 86%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row-reverse;
     background: $W;
     margin: 0;
-    height: 64px;
+    height: 54px;
     // border-bottom: 12px solid;
     position: relative;
     z-index: 9;
@@ -14,23 +15,30 @@
     box-shadow: 0px 1px 2px -2px #0000000F !important;
 
     box-shadow: 0px 0px 1px 1px #0000000D !important;
+    @media screen and (min-width:768px){
+        flex-direction: row;
+        width: 100%;
+    }
 
-    .inuptIcon{
+    .inuptIcon {
         position: absolute;
-        top: 20px;
-        left: 40px;
+        top: 15px;
+        right: 12px;
         color: #ccc;
+        @media screen and (min-width:768px){
+            left: 20px;
+        }
     }
 
 
     .inputDiv {
-        margin: .51rem 1rem;
+        margin: .51rem;
 
         input {
             border: 1px solid $W;
             padding: .25rem;
-            min-width: 362px;
-            height: 45px;
+            min-width: 162px;
+            height: 39px;
             border-radius: 6px;
             background: #F8F9FA;
 
@@ -43,8 +51,8 @@
             &::placeholder {
                 color: #999FA7;
                 text-align: start;
-                padding-left: 3rem;
-                font-size: 1.1em;
+                padding-left: 2rem;
+                font-size: .971em;
             }
         }
     }
@@ -54,6 +62,10 @@
         position: relative;
         margin: .6rem;
         text-align: center;
+
+        img {
+            width: 130px;
+        }
     }
 
     .btnsDiv {
@@ -61,6 +73,7 @@
         gap: 1rem;
         justify-content: end;
         margin: 0 1.25rem;
+        display: none;
 
         .circle {
             @include row;
@@ -109,6 +122,123 @@
 
             }
 
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .mainDivHeader {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: $W;
+        margin: 0;
+        height: 64px;
+        // border-bottom: 12px solid;
+        position: relative;
+        z-index: 9;
+        box-shadow: 0px 1px 3px 0px #00000012 !important;
+
+        box-shadow: 0px 1px 2px -2px #0000000F !important;
+
+        box-shadow: 0px 0px 1px 1px #0000000D !important;
+
+        .inuptIcon {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            color: #ccc;
+        }
+
+
+        .inputDiv {
+            margin: .51rem 1rem;
+
+            input {
+                border: 1px solid $W;
+                padding: .25rem;
+                min-width: 362px;
+                height: 45px;
+                border-radius: 6px;
+                background: #F8F9FA;
+
+                &:focus {
+                    box-shadow: none;
+                    outline: 0;
+                    border: 0;
+                }
+
+                &::placeholder {
+                    color: #999FA7;
+                    text-align: start;
+                    padding-left: 3rem;
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        .logoImg {
+            width: 100%;
+            position: relative;
+            margin: .6rem;
+            text-align: center;
+        }
+
+        .btnsDiv {
+            @include row;
+            gap: 1rem;
+            justify-content: end;
+            margin: 0 1.25rem;
+
+            .circle {
+                @include row;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #bab6b6;
+                text-align: center;
+                font-size: 1.35em;
+                color: #656E7A;
+            }
+
+            .plusBtn {
+                @extend .circle;
+                background: $blue;
+                color: $W;
+            }
+
+            .seperator {
+                width: 2px;
+                height: 32px;
+                background: #a5a3a3;
+            }
+
+            .profDiv {
+                @include row;
+                gap: .75rem;
+                width: fit-content;
+
+                .circle {
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .name {
+                    h5 {
+                        font-size: .7 89em;
+                    }
+
+                    h6 {
+                        font-size: .749em;
+                        font-weight: 500;
+                    }
+
+                }
+
+            }
         }
     }
 }
