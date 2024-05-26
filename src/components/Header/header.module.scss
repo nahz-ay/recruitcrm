@@ -37,7 +37,7 @@
         input {
             border: 1px solid $W;
             padding: .25rem;
-            min-width: 162px;
+            min-width: 152px;
             height: 39px;
             border-radius: 6px;
             background: #F8F9FA;
@@ -64,7 +64,8 @@
         text-align: center;
 
         img {
-            width: 130px;
+            width: 110px;
+            margin: 0.3rem;
         }
     }
 

@@ -103,12 +103,13 @@
             text-align: start;
             margin: .5rem 0;
             color: $textColor;
-            gap: 1rem;
+            gap: .21rem;
             flex-wrap: wrap;
+            width: 95%;
 
             p {
                 font-weight: 400;
-                font-size: .69em;
+                font-size: .89em;
                 font-family: $font;
             }
         }
@@ -154,6 +155,7 @@
         display: flex;
         gap: .2rem;
         flex-wrap: wrap;
+        width: 55%;
 
         .one {
             display: flex;
