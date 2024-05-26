@@ -1,0 +1,95 @@
+/* editusermodal.module.scss */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  overflow: auto;
+
+  @media screen and (min-width:768px) {
+    width: 600px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+
+  .modalheader {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  &:focus {
+    border: 1px solid $blue;
+    box-shadow: none;
+
+  }
+}
+
+.btnsDiv {
+  display: flex;
+  gap: 1rem;
+  button{
+  min-width: 200px;
+}
+  .saveButton {
+    background-color: $blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .cancelButton {
+    background: $W;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid $blue;
+    &:hover{
+        background-color: #f44336;
+        color:$W;
+  }
+  }
+
+}

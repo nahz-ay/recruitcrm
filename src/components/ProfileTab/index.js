@@ -1,10 +1,33 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./profiletab.module.scss";
 import Image from "next/image";
+import Modal from "react-modal";
+import EditUserModal from "./EditUserModal";
+
+// Modal.setAppElement("#__next"); // Set the app element for accessibility
 
 function ProfileTab() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [userDetails, setUserDetails] = useState({
+    organization: "World Bank Group",
+    skills: "HTML,CSS,Javascript",
+    availableFrom: "World HTML,CSS js",
+    salary: "$6000",
+    noticePeriod: "60Days",
+    address: "HTML,CSS js",
+    resume: "Q Rd New York World",
+    experience: "6 years",
+  });
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  const handleSave = (updatedDetails) => {
+    setUserDetails(updatedDetails);
+    closeModal();
+  };
+
   return (
     <>
       <div className={styles.profileTab}>
@@ -48,19 +71,18 @@ function ProfileTab() {
           </div>
         </div>
         <div className={styles.talebtnDivs}>
-          <button className={styles.contactBtn}>Contact Linked </button>
+          <button className={styles.contactBtn}>Contact Linked</button>
           <button>
-            {" "}
-            <i class="bx bx-star"></i>{" "}
+            <i className="bx bx-star"></i>
           </button>
           <button>
-            <i class="bx bxs-hot"></i>
+            <i className="bx bxs-hot"></i>
+          </button>
+          <button onClick={openModal}>
+            <i className="bx bxs-edit"></i>
           </button>
           <button>
-            <i class="bx bxs-edit"></i>
-          </button>
-          <button>
-            <i class="bx bx-dots-vertical-rounded"></i>
+            <i className="bx bx-dots-vertical-rounded"></i>
           </button>
         </div>
       </div>
@@ -87,79 +109,84 @@ function ProfileTab() {
 
       </div>
       </div>
+
       <div className={styles.tableDiv}>
         <div className={styles.columnOne}>
-            <div className={styles.rowOne}>
-                <h4> Curent Organization</h4>
-                <h5> World Bank Group</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Skills</h4>
-                <h5>  HTML,CSS,Javascript</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Available Form</h4>
-                <h5> World HTML,CSS js</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Curent Salary</h4>
-                <h5> $6000</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Notice period</h4>
-                <h5> 60Days</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Full Address</h4>
-                <h5>  HTML,CSS js</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Resume</h4>
-                <h5> Q Rd New York World</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Total Experience</h4>
-                <h5> 6 years</h5>
-            </div>
-
+          <div className={styles.rowOne}>
+            <h4>Curent Organization</h4>
+            <h5>{userDetails.organization}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Skills</h4>
+            <h5>{userDetails.skills}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Available From</h4>
+            <h5>{userDetails.availableFrom}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Curent Salary</h4>
+            <h5>{userDetails.salary}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Notice period</h4>
+            <h5>{userDetails.noticePeriod}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Full Address</h4>
+            <h5>{userDetails.address}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Resume</h4>
+            <h5>{userDetails.resume}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Total Experience</h4>
+            <h5>{userDetails.experience}</h5>
+          </div>
         </div>
         <div className={styles.columnOne}>
-            <div className={styles.rowOne}>
-                <h4> Curent Organization</h4>
-                <h5> World Bank Group</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Skills</h4>
-                <h5>  HTML,CSS,Javascript</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Available Form</h4>
-                <h5> World HTML,CSS js</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Curent Salary</h4>
-                <h5> $6000</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Notice period</h4>
-                <h5> 60Days</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Full Address</h4>
-                <h5>  HTML,CSS js</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Resume</h4>
-                <h5> Q Rd New York World</h5>
-            </div>
-            <div className={styles.rowOne}>
-                <h4> Total Experience</h4>
-                <h5> 6 years</h5>
-            </div>
-
+          <div className={styles.rowOne}>
+            <h4>Curent Organization</h4>
+            <h5>{userDetails.organization}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Skills</h4>
+            <h5>{userDetails.skills}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Available From</h4>
+            <h5>{userDetails.availableFrom}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Curent Salary</h4>
+            <h5>{userDetails.salary}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Notice period</h4>
+            <h5>{userDetails.noticePeriod}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Full Address</h4>
+            <h5>{userDetails.address}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Resume</h4>
+            <h5>{userDetails.resume}</h5>
+          </div>
+          <div className={styles.rowOne}>
+            <h4>Total Experience</h4>
+            <h5>{userDetails.experience}</h5>
+          </div>
         </div>
       </div>
-      
+
+      <EditUserModal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        userDetails={userDetails}
+        onSave={handleSave}
+      />
     </>
   );
 }
