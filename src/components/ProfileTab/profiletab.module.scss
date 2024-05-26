@@ -222,6 +222,9 @@
                 text-align: start;
                 font-size: 1em !important;
                 width: 50%;
+                &::first-letter{
+                    text-transform: capitalize;
+                }
             }
 
             h5 {
