@@ -453,6 +453,9 @@
                     font-size: 1.091em !important;
                     width: 50%;
                     color: $textColor;
+                    &::first-letter{
+                        text-transform: capitalize;
+                    }
                 }
 
                 h5 {
