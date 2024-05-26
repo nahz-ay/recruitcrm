@@ -19,7 +19,6 @@ function NotesSide() {
             <i class="bx bxs-calendar-alt"></i>
           </span>
         </div>
-       
 
         <div className={styles.allnotes}>
           <span className={styles.active}>All</span>
@@ -32,9 +31,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
@@ -59,9 +57,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
@@ -86,9 +83,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
@@ -113,9 +109,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
@@ -140,9 +135,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
@@ -167,9 +161,8 @@ function NotesSide() {
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
-                {" "}
                 <i class="bx bxs-file-blank"></i>
-                Note{" "}
+                Note
               </p>
               <span> To Do</span>
             </div>
