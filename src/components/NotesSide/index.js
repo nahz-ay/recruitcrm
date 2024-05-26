@@ -52,8 +52,54 @@ function NotesSide() {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.notesDiv}>
+          <div className={styles.notesOne}>
+            <div className={styles.head}>
+              <p>
+                <i className="bx bxs-file-blank"></i>
+                Note
+              </p>
+              <span>To Do</span>
+            </div>
+            <p className={styles.para}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
+            </p>
+            <h5>Association(s)</h5>
+            <div className={styles.profFooter}>
+              <div>
+                <i className="bx bxs-user"></i>
+                John Doe
+              </div>
+              <div>
+                <i className="bx bx-time-five"></i>
+                12.2023, 11:34 am
+              </div>
+            </div>
+          </div>
+          <div className={styles.notesOne}>
+            <div className={styles.head}>
+              <p>
+                <i className="bx bxs-file-blank"></i>
+                Note
+              </p>
+              <span>To Do</span>
+            </div>
+            <p className={styles.para}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
+            </p>
+            <h5>Association(s)</h5>
+            <div className={styles.profFooter}>
+              <div>
+                <i className="bx bxs-user"></i>
+                John Doe
+              </div>
+              <div>
+                <i className="bx bx-time-five"></i>
+                12.2023, 11:34 am
+              </div>
+            </div>
+          </div>
           <div className={styles.notesOne}>
             <div className={styles.head}>
               <p>
@@ -79,110 +125,8 @@ function NotesSide() {
             </div>
           </div>
         </div>
-        <div className={styles.notesDiv}>
-          <div className={styles.notesOne}>
-            <div className={styles.head}>
-              <p>
-                <i className="bx bxs-file-blank"></i>
-                Note
-              </p>
-              <span>To Do</span>
-            </div>
-            <p className={styles.para}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
-            </p>
-            <h5>Association(s)</h5>
-            <div className={styles.profFooter}>
-              <div>
-                <i className="bx bxs-user"></i>
-                John Doe
-              </div>
-              <div>
-                <i className="bx bx-time-five"></i>
-                12.2023, 11:34 am
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.notesDiv}>
-          <div className={styles.notesOne}>
-            <div className={styles.head}>
-              <p>
-                <i className="bx bxs-file-blank"></i>
-                Note
-              </p>
-              <span>To Do</span>
-            </div>
-            <p className={styles.para}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
-            </p>
-            <h5>Association(s)</h5>
-            <div className={styles.profFooter}>
-              <div>
-                <i className="bx bxs-user"></i>
-                John Doe
-              </div>
-              <div>
-                <i className="bx bx-time-five"></i>
-                12.2023, 11:34 am
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.notesDiv}>
-          <div className={styles.notesOne}>
-            <div className={styles.head}>
-              <p>
-                <i className="bx bxs-file-blank"></i>
-                Note
-              </p>
-              <span>To Do</span>
-            </div>
-            <p className={styles.para}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
-            </p>
-            <h5>Association(s)</h5>
-            <div className={styles.profFooter}>
-              <div>
-                <i className="bx bxs-user"></i>
-                John Doe
-              </div>
-              <div>
-                <i className="bx bx-time-five"></i>
-                12.2023, 11:34 am
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.notesDiv}>
-          <div className={styles.notesOne}>
-            <div className={styles.head}>
-              <p>
-                <i className="bx bxs-file-blank"></i>
-                Note
-              </p>
-              <span>To Do</span>
-            </div>
-            <p className={styles.para}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
-            </p>
-            <h5>Association(s)</h5>
-            <div className={styles.profFooter}>
-              <div>
-                <i className="bx bxs-user"></i>
-                John Doe
-              </div>
-              <div>
-                <i className="bx bx-time-five"></i>
-                12.2023, 11:34 am
-              </div>
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
     </>
   );

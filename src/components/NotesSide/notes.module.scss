@@ -43,14 +43,20 @@
 
     .notesDiv {
         background: #e3e0e031;
-
+        @include row;
+        flex-direction: column;
+        width: 85%;
+        // gap: 1rem;
+        padding-top: 1rem;
+        align-items: center;
+        
         .notesOne {
             background: $W;
             padding: .21rem .1rem;
-            margin: 1rem;
+            margin: .25rem;
             border: 1px solid #ccc;
             border-radius: 6px;
-            width: 80%;
+            width: fit-content;
 
             .head {
                 display: flex;
@@ -157,11 +163,16 @@
 
         .notesDiv {
             background: #e3e0e031;
+            @include row;
+            padding: 1rem 0;
+            width: 99%;
+            align-items: center;
+            justify-content: center;
 
             .notesOne {
                 background: $W;
                 padding: .21rem .1rem;
-                margin: 1rem;
+                margin: .51rem;
                 border: 1px solid #ccc;
                 border-radius: 6px;
                 width: fit-content;
